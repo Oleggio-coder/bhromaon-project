@@ -1,0 +1,42 @@
+/*BASICS IMPORT*/
+
+//Fonts import
+@import './base/_fonts.scss';
+
+//Variables import
+@import './base/_variables.scss';
+
+//Reset styles import
+@import './base/_reset.scss';
+
+//General styles import
+@import './base/_general.scss';
+
+
+
+
+/*SECTIONS IMPORT*/
+
+//Header import
+@import './modules/_header.scss';
+
+//First section import
+@import './modules/_hero-section.scss';
+
+//'Why Choose Us' section import
+@import './modules/_why-section.scss';
+
+//Steps section import
+@import './modules/_steps-section.scss';
+
+//First booking section import
+@import './modules/_book-first-section.scss';
+
+//Second booking section import
+@import './modules/_book-second-section.scss';
+
+//'What Our Tourists Say' section import
+@import './modules/_tourists-section.scss';
+
+//Footer import
+@import './modules/_footer.scss';
