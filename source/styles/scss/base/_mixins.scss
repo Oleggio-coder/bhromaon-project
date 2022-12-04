@@ -1,0 +1,85 @@
+/*MIXIN FOR MEDIA QUERIES*/
+
+
+/*
+
+media-query-for-size — Name of mixin
+
+$type-of-device — Variable that denotes the type of device 
+                  for which the responsive design will have 
+                  made
+
+*/
+
+
+$mobile-small-breakpoint: 575px;  //mobile-small — <576px (max-width: 575px)
+$mobile-only-breakpoint: 576px;  //mobile-only — 576px (min-width)
+$tablet-only-breakpoint: 768px;  //tablet-only — 768px (min-width)
+$desktop-small-breakpoint: 1024px;  //desktop-small — 1024px (min-width)
+$desktop-medium-breakpoint: 1360px;  //desktop-medium — 1360px (min-width)
+$desktop-full-hd-breakpoint: 1920px;  //desktop-full-hd — 1920px (min-width)
+$desktop-high-resolution-breakpoint: 1921px;  //desktop-high-resolution — >1920px (min-width: 1921px)
+
+
+@mixin media-query-for-size($type-of-device) {
+
+  @if $type-of-device == mobile-small {
+    @media (max-width: $mobile-small-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $type-of-device == mobile-only {
+    @media (min-width: $mobile-only-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $type-of-device == tablet-only {
+    @media (min-width: $tablet-only-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $type-of-device == desktop-small {
+    @media (min-width: $desktop-small-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $type-of-device == desktop-medium {
+    @media (min-width: $desktop-medium-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $type-of-device == desktop-full-hd {
+    @media (min-width: $desktop-full-hd-breakpoint) {
+      @content;
+    }
+  }
+
+  @else if $type-of-device == desktop-high-resolution {
+    @media (min-width: $desktop-high-resolution-breakpoint) {
+      @content;
+    }
+  }
+}
+
+
+/*HOW TO USE IN SCSS*/
+
+
+/*
+
+.class-name {
+
+  property: value;
+
+  @include media-query-for-size(mobile-small or mobile-only ... or ... etc. ...) {
+    property: value;
+  }
+
+}
+
+*/
