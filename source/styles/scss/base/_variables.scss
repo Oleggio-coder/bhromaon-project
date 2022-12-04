@@ -1,0 +1,86 @@
+/*VARIABLES DECLARATION*/
+
+
+
+
+/*Fonts properties variables declaration*/
+
+//Font families
+$main-font: 'josefinsans';
+$secondary-font: 'aleo';
+
+//Font sizes
+$main-font-size-14: 14px;
+$main-font-size-16: 16px;
+$main-font-size-20: 20px;
+$main-font-size-22: 22px;
+$main-font-size-24: 24px;
+$main-font-size-48: 48px;
+
+$secondary-font-size-14: 14px;
+$secondary-font-size-16: 16px;
+$secondary-font-size-36: 36px;
+
+//Font line heights
+$main-font-line-height-20: 20px;
+$main-font-line-height-28: 28px;
+$main-font-line-height-52: 52px;
+
+$secondary-font-line-height-20: 20px;
+$secondary-font-line-height-40: 40px;
+
+//Font letter spacings
+$main-font-letter-spacing-01: 0.1em;
+$main-font-letter-spacing-02: 0.2em;
+$main-font-letter-spacing-031: 0.31em;
+
+$secondary-font-letter-spacing-01: 0.1em;
+$secondary-font-letter-spacing-007: 0.07em;
+
+//Font weights
+$main-font-light: 300;
+$main-font-regular: 400;
+$main-font-bold: 700;
+
+$secondary-font-light: 300;
+$secondary-font-regular: 400;
+$secondary-font-bold: 700;
+
+
+
+
+/*Colors variables declaration*/
+$color-accent: #5373FD;
+$color-accent-darker: #486BFE;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-dark-grey: #333333;
+$color-text-grey: #999999;
+$color-red: #FF6363;
+$color-blue: #00A2FF;
+
+
+
+
+/*Logo colors variables declaration*/
+$facebook-logo-color: #4267B2;
+$twitter-logo-color: #1DA1F2;
+$linkedin-logo-color: #0E76A8;
+$youtube-logo-color: #FF0000;
+$pinterest-logo-color: #E60023;
+
+
+
+
+/*HOW TO USE IN SCSS*/
+
+
+/*
+
+.class-name {
+
+  property: $variable;
+
+}
+
+*/
