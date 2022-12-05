@@ -1,0 +1,69 @@
+.header {
+  background-color: $color-accent;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 84px;
+  max-width: 1920px;
+
+  .logo-text {
+    font-family: $main-font;
+    font-weight: $main-font-bold;
+    font-size: $main-font-size-24;
+    line-height: $main-font-line-height-28;
+    letter-spacing: $main-font-letter-spacing-01;
+    color: $color-white;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  .nav-link {
+    font-family: $secondary-font;
+    font-weight: $secondary-font-regular;
+    font-size: $secondary-font-size-14;
+    line-height: $secondary-font-line-height-20;
+    letter-spacing: $secondary-font-letter-spacing-01;
+    color: $color-white;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  @include media-query-for-size(desktop-high-resolution) {
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include media-query-for-size(desktop-small) {
+      gap: 217px;
+    }
+
+    @include media-query-for-size(desktop-medium) {
+      gap: 397px;
+    }
+
+    @include media-query-for-size(desktop-full-hd){
+      gap: 577px;
+    }
+
+    @include media-query-for-size(desktop-high-resolution) {
+      gap: 577px;
+    }
+  }
+
+  .nav-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
