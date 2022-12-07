@@ -12,13 +12,28 @@
   z-index: 1;
   left: 0;
 
+  @media screen and (max-width: 768px) {
+
+    .logo-holder {
+      padding-left: 58px;
+      margin: 0 auto;
+
+      @media screen and (width: 768px) {
+        padding-left: 0;
+      }
+    }
+  }
+
   &.active {
+
     .nav-list {
       opacity: 1;
       visibility: visible;
     }
 
     .burger-btn {
+      margin: 0 18px calc(((84px / 2) / 2) - 6px) 0;
+
       span {
         opacity: 0;
       }
@@ -52,12 +67,7 @@
     max-width: 1320px;
 
     @include media-query-for-size(mobile-small) {
-      justify-content: center;
-      align-items: center;
-    }
-
-    @include media-query-for-size(mobile-only) {
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -72,12 +82,21 @@
       justify-content: space-between;
       flex-direction: row;
       max-width: 960px;
+      gap: 0;
     }
 
     @include media-query-for-size(desktop-medium) {
       justify-content: space-between;
       flex-direction: row;
       max-width: 1140px;
+      gap: 0;
+    }
+
+    @include media-query-for-size(desktop-full-hd) {
+      justify-content: space-between;
+      flex-direction: row;
+      max-width: 1320px;
+      gap: 0;
     }
   }
 
@@ -85,8 +104,8 @@
     background-color: $color-accent;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    padding: 15px;
+    padding: 32px 0 32px;
+    gap: 24px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -97,13 +116,15 @@
     transition: all ease-in-out 0.2s;
 
     @include media-query-for-size(tablet-only) {
+      margin: 0;
+      padding: 0;
       position: static;
       opacity: 1;
       visibility: visible;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      margin: 0 -21px;
+      gap: 40px;
     }
   }
 
@@ -129,6 +150,11 @@
     background-color: transparent;
     outline: none;
     border: none;
+    margin: 0 18px 0 0;
+
+    @media screen and (max-width: 321px) {
+      margin: 0 9px 0 9px;
+    }
 
     @include media-query-for-size(tablet-only) {
       display: none;
@@ -142,7 +168,7 @@
       left: 0;
       width: 100%;
       border-bottom: 2px solid $color-white;
-      transition: all ease-in-out 0.2s;
+      transition: all ease-in-out 0.1s;
     }
 
     span {
