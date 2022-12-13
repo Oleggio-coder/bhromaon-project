@@ -18,6 +18,9 @@ body {
 img {
   max-width: 100%;
   display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 ul, ol {
@@ -26,4 +29,30 @@ ul, ol {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main {
+
+  @media screen and (max-width: 768px) {
+    padding-top: 84px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 136px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 84px;
+  }
 }
