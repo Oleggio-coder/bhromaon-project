@@ -22,12 +22,17 @@
     color: $color-white;
   }
 
+  .title-holder {
+    padding-bottom: 8px;
+  }
+
   .pseudo-title-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 48px;
   }
 
   .pseudo-title {
@@ -112,6 +117,10 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+  }
+
+  .anchor-holder {
+    padding-top: 211px;
   }
 
   .anchor {
