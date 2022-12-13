@@ -11,4 +11,125 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    font-family: $main-font;
+    font-weight: $main-font-bold;
+    font-size: $main-font-size-48;
+    line-height: $main-font-line-height-52;
+    text-transform: uppercase;
+    font-style: normal;
+    color: $color-white;
+  }
+
+  .pseudo-title-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pseudo-title {
+    font-family: $main-font;
+    font-weight: $main-font-regular;
+    font-size: $main-font-size-22;
+    line-height: $main-font-line-height-28;
+    letter-spacing: $main-font-letter-spacing-031;
+    font-style: normal;
+    color: $color-white;
+  }
+
+  .form-holder {
+    width: 100%;
+    max-width: 647px;
+    padding: 0 18px;
+    position: relative;
+
+    @media screen and (min-width: 576px) and (max-width: 768px) {
+      max-width: 540px;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 576px) {
+      padding: 0;
+    }
+
+    @media (width: 768px) {
+      max-width: 647px;
+      padding: 0;
+    }
+  }
+
+  .button-holder {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: 4px;
+    max-width: 139px;
+    width: 100%;
+
+    @media screen and (max-width: 576px) {
+      right: 22px;
+    }
+
+    @media (width: 576px) {
+      right: 4px;
+    }
+  }
+
+  .search-input {
+    font-family: $main-font;
+    font-weight: $main-font-regular;
+    font-size: $main-font-size-14;
+    line-height: $main-font-line-height-20;
+    letter-spacing: $main-font-letter-spacing-02;
+    font-style: normal;
+    color: $color-text-grey;
+    width: 100%;
+    min-height: 60px;
+    padding-left: 36px;
+    padding-right: 149px;
+  }
+
+  .search-btn {
+    font-family: $secondary-font;
+    font-weight: $secondary-font-regular;
+    font-size: $secondary-font-size-14;
+    line-height: $secondary-font-line-height-20;
+    letter-spacing: $secondary-font-letter-spacing-01;
+    text-transform: uppercase;
+    font-style: normal;
+    color: $color-white;
+    width: 100%;
+    min-height: 52px;
+    background-color: $color-accent;
+    border-style: none;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .anchor {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .anchor-text {
+    font-family: $main-font;
+    font-weight: $main-font-regular;
+    font-size: $main-font-size-14;
+    line-height: $main-font-line-height-20;
+    letter-spacing: $main-font-letter-spacing-02;
+    font-style: normal;
+    color: $color-white;
+  }
 }
