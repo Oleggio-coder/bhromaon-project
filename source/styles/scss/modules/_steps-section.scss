@@ -1,0 +1,193 @@
+@import '../base/variables';
+
+.steps-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-dark-grey;
+  min-height: 306px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include media-query-for-size (mobile-small) {
+    min-height: 658px;
+  }
+
+  @include media-query-for-size (mobile-only) {
+    min-height: 658px;
+  }
+
+  @include media-query-for-size (desktop-small) {
+    min-height: 306px;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1320px;
+    min-height: 306px;
+
+    @include media-query-for-size (mobile-small) {
+      min-height: 658px;
+      max-width: 720px;
+      position: initial;
+    }
+
+    @include media-query-for-size (mobile-only) {
+      min-height: 658px;
+      max-width: 720px;
+      position: initial;
+    }
+
+    @include media-query-for-size (desktop-small) {
+      min-height: 306px;
+      max-width: 960px;
+      position: relative;
+    }
+
+    @include media-query-for-size (desktop-medium) {
+      max-width: 1140px;
+    }
+
+    @include media-query-for-size (desktop-full-hd) {
+      max-width: 1320px;
+    }
+  }
+
+  .step-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 424px;
+    min-height: 139px;
+
+    @include media-query-for-size (desktop-small) {
+      max-width: 320px;
+    }
+
+    @include media-query-for-size (desktop-medium) {
+      max-width: 364px;
+    }
+
+    @include media-query-for-size (desktop-full-hd) {
+      max-width: 424px;
+    }
+  }
+
+  .step-icon-holder {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-dark-grey;
+  }
+
+  .steps-icons-spans-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+
+    @include media-query-for-size (mobile-small) {
+      padding-bottom: 0;
+      flex-direction: column;
+      position: initial;
+      min-height: inherit;
+
+      .step-holder:nth-child(1) {
+        padding-top: 60px;
+      }
+
+      .step-holder:nth-child(3) {
+        padding-bottom: 60px;
+      }
+    }
+
+    @include media-query-for-size (mobile-only) {
+      padding-bottom: 0;
+      flex-direction: column;
+      position: initial;
+      min-height: inherit;
+
+      .step-holder:nth-child(1) {
+        padding-top: 60px;
+      }
+
+      .step-holder:nth-child(3) {
+        padding-bottom: 60px;
+      }
+    }
+
+    @include media-query-for-size (desktop-small) {
+      padding-bottom: 60px;
+      flex-direction: row;
+      min-height: initial;
+      position: absolute;
+      bottom: 0;
+
+      .step-holder:nth-child(1) {
+        padding-top: 0;
+      }
+
+      .step-holder:nth-child(3) {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .step-span {
+    font-family: $secondary-font;
+    font-weight: $secondary-font-regular;
+    font-size: $secondary-font-size-36;
+    line-height: $secondary-font-line-height-40;
+    color: $color-white;
+    font-style: normal;
+    text-transform: capitalize;
+  }
+
+  .dotted-line-image-holder {
+    max-width: 872px;
+    min-height: 90px;
+    padding-top: 60px;
+
+    @include media-query-for-size (mobile-small) {
+      display: none;
+    }
+
+    @include media-query-for-size (mobile-only) {
+      display: none;
+    }
+
+    @include media-query-for-size (desktop-small) {
+      display: initial;
+      max-width: 632px;
+      min-height: 57px;
+    }
+
+    @include media-query-for-size (desktop-medium) {
+      max-width: 752px;
+      min-height: 69px;
+    }
+
+    @include media-query-for-size (desktop-full-hd) {
+      max-width: 872px;
+      min-height: 90px;
+    }
+  }
+}
