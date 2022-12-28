@@ -1,0 +1,186 @@
+@import '../base/variables';
+
+.book-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 684px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include media-query-for-size(mobile-only) {
+    min-height: 616px;
+  }
+
+  @include media-query-for-size(tablet-only) {
+    min-height: 588px;
+  }
+
+  @include media-query-for-size(desktop-small) {
+    min-height: 712px;
+  }
+
+  @include media-query-for-size(desktop-medium) {
+    min-height: 712px;
+  }
+
+  @include media-query-for-size(desktop-full-hd) {
+    min-height: 684px;
+  }
+
+  .book-pseudo-title {
+    font-family: $main-font;
+    font-weight: $main-font-light;
+    font-size: $main-font-size-20;
+    line-height: $main-font-line-height-28;
+    letter-spacing: $main-font-letter-spacing-01;
+    color: $color-white;
+    font-style: normal;
+  }
+
+  h2 {
+    font-family: $main-font;
+    font-weight: $main-font-regular;
+    font-size: $main-font-size-20;
+    line-height: $main-font-line-height-28;
+    text-transform: uppercase;
+    color: $color-white;
+    font-style: normal;
+  }
+
+  .book-main-text-holder {
+    width: 100%;
+    max-width: 584px;
+    min-height: 84px;
+  }
+
+  .book-pseudo-title-holder {
+    padding-bottom: 16px;
+  }
+
+  .book-main-text-holder p {
+    font-family: $main-font;
+    font-weight: $main-font-light;
+    font-size: $main-font-size-16;
+    line-height: $main-font-line-height-28;
+    letter-spacing: $main-font-letter-spacing-01;
+    color: $color-white;
+    font-style: normal;
+  }
+
+  .book-container {
+    width: 100%;
+    max-width: 1320px;
+    min-height: 684px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: end;
+    align-items: baseline;
+
+    @include media-query-for-size(mobile-only) {
+      max-width: 540px;
+      min-height: 616px;
+    }
+
+    @include media-query-for-size(tablet-only) {
+      max-width: 720px;
+      min-height: 588px;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      max-width: 960px;
+      min-height: 712px;
+    }
+
+    @include media-query-for-size(desktop-medium) {
+      max-width: 1140px;
+      min-height: 712px;
+    }
+  
+    @include media-query-for-size(desktop-full-hd) {
+      max-width: 1320px;
+      min-height: 684px;
+    }
+  }
+
+  .book-content-holder {
+    width: 100%;
+    max-width: 648px;
+    min-height: 344px;
+    background-color: rgba(35, 35, 35, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 44px 32px;
+    margin-bottom: 120px;
+
+    @include media-query-for-size(mobile-only) {
+      max-width: 540px;
+      min-height: 376px;
+    }
+
+    @include media-query-for-size(tablet-only) {
+      max-width: 720px;
+      min-height: 348px;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      max-width: 550px;
+      min-height: 372px;
+    }
+
+    @include media-query-for-size(desktop-medium) {
+      max-width: 558px;
+      min-height: 372px;
+    }
+  
+    @include media-query-for-size(desktop-full-hd) {
+      max-width: 648px;
+      min-height: 344px;
+    }
+  }
+
+  .link-button-holder {
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      min-height: 0;
+      max-width: 109px;
+      border-bottom: 60px solid $color-accent-darker;
+      border-left: 0 solid transparent;
+      border-right: 60px solid transparent;
+    }
+  }
+
+  .link-button {
+    font-family: $secondary-font;
+    font-weight: $secondary-font-regular;
+    font-size: $secondary-font-size-16;
+    line-height: $secondary-font-line-height-20;
+    letter-spacing: $secondary-font-letter-spacing-007;
+    color: $color-white;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 100%;
+    height: 60px;
+    width: 213px;
+    background-color: $color-accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .link-button-text-holder {
+      z-index: 0;
+    }
+  }
+}
