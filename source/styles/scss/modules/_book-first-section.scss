@@ -79,7 +79,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: end;
-    align-items: baseline;
+    align-items: flex-start;
 
     @include media-query-for-size(mobile-only) {
       max-width: 540px;
