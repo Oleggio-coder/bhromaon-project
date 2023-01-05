@@ -1,0 +1,88 @@
+@import '../base/variables';
+
+.footer {
+  background-color: $color-black;
+  width: 100%;
+  min-height: 268px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .footer-container {
+    width: 100%;
+    min-height: 268px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .social-networks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .footer-logo-holder {
+    padding-bottom: 12px;
+  }
+
+  .footer-pseudo-title-holder {
+    padding-bottom: 22px;
+  }
+
+  .footer-pseudo-title {
+    font-family: $main-font;
+    font-weight: $main-font-regular;
+    font-size: $main-font-size-14;
+    line-height: $main-font-line-height-20;
+    letter-spacing: $main-font-letter-spacing-02;
+    color: $color-white;
+    font-style: normal;
+  }
+
+  path {
+    transition: all ease-in-out 0.3s;
+  }
+
+  .facebook-link:hover {
+    .facebook {
+      fill: $facebook-logo-color;
+      transform: scale(1.1);
+    }
+  }
+
+  .twitter-link:hover {
+    .twitter {
+      fill: $twitter-logo-color;
+      transform: scale(1.1);
+    }
+  }
+
+  .linkedin-link:hover {
+    .linkedin {
+      fill: $linkedin-logo-color;
+      transform: scale(1.1);
+    }
+  }
+
+  .youtube-link:hover {
+    .youtube {
+      fill: $youtube-logo-color;
+      transform: scale(1.1);
+    }
+  }
+
+  .pinterest-link:hover {
+    .pinterest {
+      fill: $pinterest-logo-color;
+      transform: scale(1.1);
+    }
+  }
+}
