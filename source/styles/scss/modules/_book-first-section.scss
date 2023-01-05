@@ -69,6 +69,14 @@
     letter-spacing: $main-font-letter-spacing-01;
     color: $color-white;
     font-style: normal;
+
+    @include media-query-for-size(mobile-small) {
+      text-align: justify;
+    }
+
+    @include media-query-for-size(mobile-only) {
+      text-align: initial;
+    }
   }
 
   .book-container {
@@ -81,7 +89,12 @@
     justify-content: end;
     align-items: flex-start;
 
+    @include media-query-for-size(mobile-small) {
+      padding: 15px;
+    }
+
     @include media-query-for-size(mobile-only) {
+      padding: 0;
       max-width: 540px;
       min-height: 616px;
     }
@@ -119,7 +132,12 @@
     padding: 44px 32px;
     margin-bottom: 120px;
 
+    @include media-query-for-size(mobile-small) {
+      padding: 22px 16px;
+    }
+
     @include media-query-for-size(mobile-only) {
+      padding: 44px 32px;
       max-width: 540px;
       min-height: 376px;
     }
