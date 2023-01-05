@@ -24,6 +24,17 @@
     }
   }
 
+  .logo-link {
+
+    img {
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
   &.active {
 
     .nav-list {
@@ -113,7 +124,7 @@
     margin: 0;
     opacity: 0;
     visibility: hidden;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.3s;
 
     @include media-query-for-size(tablet-only) {
       margin: 0;
@@ -141,6 +152,11 @@
     color: $color-white;
     text-transform: uppercase;
     font-style: normal;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: $color-black;
+    }
   }
 
   .burger-btn {
