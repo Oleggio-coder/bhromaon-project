@@ -98,13 +98,10 @@
 
     @include media-query-for-size(tablet-only) {
       max-width: 720px;
-      min-height: 336px;
-      height: 336px;
     }
 
     @include media-query-for-size(desktop-small) {
       max-width: 320px;
-      min-height: 336px;
       height: initial;
     }
 
@@ -179,7 +176,6 @@
     }
 
     @include media-query-for-size(tablet-only) {
-      flex-direction: column;
       max-width: 720px;
       min-height: 644px;
     }
@@ -191,13 +187,11 @@
     }
 
     @include media-query-for-size(desktop-medium) {
-      flex-direction: row;
       max-width: 1140px;
       min-height: 308px;
     }
 
     @include media-query-for-size(desktop-full-hd) {
-      flex-direction: row;
       max-width: 1320px;
       min-height: 280px;
     }
