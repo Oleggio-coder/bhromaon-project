@@ -1,8 +1,6 @@
 /*VARIABLES DECLARATION*/
 
 
-
-
 /*Fonts properties variables declaration*/
 
 //Font families
@@ -50,6 +48,7 @@ $secondary-font-bold: 700;
 
 
 /*Colors variables declaration*/
+
 $color-accent: #5373FD;
 $color-accent-darker: #486BFE;
 $color-white: #FFFFFF;
@@ -63,30 +62,9 @@ $color-blue: #00A2FF;
 
 
 /*Logo colors variables declaration*/
+
 $facebook-logo-color: #4267B2;
 $twitter-logo-color: #1DA1F2;
 $linkedin-logo-color: #0E76A8;
 $youtube-logo-color: #FF0000;
 $pinterest-logo-color: #E60023;
-
-
-
-
-/*Other values variables declaration*/
-
-
-
-
-
-/*HOW TO USE IN SCSS*/
-
-
-/*
-
-.class-name {
-
-  property: $variable;
-
-}
-
-*/

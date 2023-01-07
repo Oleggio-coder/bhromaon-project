@@ -65,21 +65,3 @@ $desktop-high-resolution-breakpoint: 1921px;  //desktop-high-resolution — >192
     }
   }
 }
-
-
-/*HOW TO USE IN SCSS*/
-
-
-/*
-
-.class-name {
-
-  property: value;
-
-  @include media-query-for-size(mobile-small or mobile-only ... or ... etc. ...) {
-    property: value;
-  }
-
-}
-
-*/
