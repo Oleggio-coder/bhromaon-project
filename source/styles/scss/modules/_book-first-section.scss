@@ -11,26 +11,6 @@
   justify-content: center;
   align-items: center;
 
-  @include media-query-for-size(mobile-only) {
-    min-height: 616px;
-  }
-
-  @include media-query-for-size(tablet-only) {
-    min-height: 588px;
-  }
-
-  @include media-query-for-size(desktop-small) {
-    min-height: 712px;
-  }
-
-  @include media-query-for-size(desktop-medium) {
-    min-height: 712px;
-  }
-
-  @include media-query-for-size(desktop-full-hd) {
-    min-height: 684px;
-  }
-
   .book-pseudo-title {
     font-family: $main-font;
     font-weight: $main-font-light;
@@ -111,7 +91,6 @@
 
     @include media-query-for-size(desktop-medium) {
       max-width: 1140px;
-      min-height: 712px;
     }
   
     @include media-query-for-size(desktop-full-hd) {
@@ -154,7 +133,6 @@
 
     @include media-query-for-size(desktop-medium) {
       max-width: 558px;
-      min-height: 372px;
     }
   
     @include media-query-for-size(desktop-full-hd) {
