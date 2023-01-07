@@ -12,18 +12,6 @@
   justify-content: center;
   align-items: center;
 
-  @include media-query-for-size (mobile-small) {
-    min-height: 658px;
-  }
-
-  @include media-query-for-size (mobile-only) {
-    min-height: 658px;
-  }
-
-  @include media-query-for-size (desktop-small) {
-    min-height: 306px;
-  }
-
   .steps-container {
     display: flex;
     flex-wrap: wrap;
@@ -34,29 +22,29 @@
     max-width: 1320px;
     min-height: 306px;
 
-    @include media-query-for-size (mobile-small) {
+    @include media-query-for-size(mobile-small) {
       min-height: 658px;
       max-width: 720px;
       position: initial;
     }
 
-    @include media-query-for-size (mobile-only) {
+    @include media-query-for-size(mobile-only) {
       min-height: 658px;
       max-width: 720px;
       position: initial;
     }
 
-    @include media-query-for-size (desktop-small) {
+    @include media-query-for-size(desktop-small) {
       min-height: 306px;
       max-width: 960px;
       position: relative;
     }
 
-    @include media-query-for-size (desktop-medium) {
+    @include media-query-for-size(desktop-medium) {
       max-width: 1140px;
     }
 
-    @include media-query-for-size (desktop-full-hd) {
+    @include media-query-for-size(desktop-full-hd) {
       max-width: 1320px;
     }
   }
@@ -71,15 +59,15 @@
     max-width: 424px;
     min-height: 139px;
 
-    @include media-query-for-size (desktop-small) {
+    @include media-query-for-size(desktop-small) {
       max-width: 320px;
     }
 
-    @include media-query-for-size (desktop-medium) {
+    @include media-query-for-size(desktop-medium) {
       max-width: 364px;
     }
 
-    @include media-query-for-size (desktop-full-hd) {
+    @include media-query-for-size(desktop-full-hd) {
       max-width: 424px;
     }
   }
@@ -104,7 +92,7 @@
     justify-content: space-between;
     padding-bottom: 60px;
 
-    @include media-query-for-size (mobile-small) {
+    @include media-query-for-size(mobile-small) {
       padding-bottom: 0;
       flex-direction: column;
       position: initial;
@@ -119,7 +107,7 @@
       }
     }
 
-    @include media-query-for-size (mobile-only) {
+    @include media-query-for-size(mobile-only) {
       padding-bottom: 0;
       flex-direction: column;
       position: initial;
@@ -134,7 +122,7 @@
       }
     }
 
-    @include media-query-for-size (desktop-small) {
+    @include media-query-for-size(desktop-small) {
       padding-bottom: 60px;
       flex-direction: row;
       min-height: initial;
@@ -166,26 +154,26 @@
     min-height: 90px;
     padding-top: 60px;
 
-    @include media-query-for-size (mobile-small) {
+    @include media-query-for-size(mobile-small) {
       display: none;
     }
 
-    @include media-query-for-size (mobile-only) {
+    @include media-query-for-size(mobile-only) {
       display: none;
     }
 
-    @include media-query-for-size (desktop-small) {
+    @include media-query-for-size(desktop-small) {
       display: initial;
       max-width: 632px;
       min-height: 57px;
     }
 
-    @include media-query-for-size (desktop-medium) {
+    @include media-query-for-size(desktop-medium) {
       max-width: 752px;
       min-height: 69px;
     }
 
-    @include media-query-for-size (desktop-full-hd) {
+    @include media-query-for-size(desktop-full-hd) {
       max-width: 872px;
       min-height: 90px;
     }
