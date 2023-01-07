@@ -28,6 +28,18 @@
     letter-spacing: $main-font-letter-spacing-01;
     color: $color-white;
     font-style: normal;
+
+    @include media-query-for-size(mobile-small) {
+      text-align: justify;
+    }
+
+    @include media-query-for-size(mobile-only) {
+      text-align: center;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      text-align: left;
+    }
   }
 
   .why-container {
@@ -73,86 +85,71 @@
     @include media-query-for-size(desktop-full-hd) {
       max-width: 1320px;
     }
+  }
 
-    .why-text-content-holder {
-      width: 100%;
-      min-height: 324px;
-      max-width: 648px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-between;
+  .why-text-content-holder {
+    width: 100%;
+    min-height: 324px;
+    max-width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 
-      @include media-query-for-size(mobile-small) {
-        max-width: 260px;
-        min-height: 311px;
-        justify-content: center;
-        align-items: center;
-
-        .why-first-paragraph-holder p,
-        .why-second-paragraph-holder p {
-          text-align: justify;
-        }
-      }
-
-      @include media-query-for-size(mobile-only) {
-        max-width: 540px;
-        min-height: 311px;
-        justify-content: center;
-        align-items: center;
-
-        .why-first-paragraph-holder p,
-        .why-second-paragraph-holder p {
-          text-align: center;
-        }
-      }
-
-      @include media-query-for-size(tablet-only) {
-        max-width: 720px;
-        min-height: 288px;
-      }
-
-      @include media-query-for-size(desktop-small) {
-        max-width: 550px;
-        min-height: 324px;
-        justify-content: space-between;
-        align-items: flex-start;
-
-        .why-first-paragraph-holder p,
-        .why-second-paragraph-holder p {
-          text-align: left;
-        }
-      }
-
-      @include media-query-for-size(desktop-medium) {
-        max-width: 558px;
-      }
-  
-      @include media-query-for-size(desktop-full-hd) {
-        max-width: 648px;
-      }
+    @include media-query-for-size(mobile-small) {
+      max-width: 260px;
+      min-height: 311px;
+      justify-content: center;
+      align-items: center;
     }
 
-    .why-text-holder {
-      width: 100%;
-      min-height: 168px;
+    @include media-query-for-size(mobile-only) {
+      max-width: 540px;
+      min-height: 311px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include media-query-for-size(tablet-only) {
+      max-width: 720px;
+      min-height: 288px;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      max-width: 550px;
+      min-height: 324px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @include media-query-for-size(desktop-medium) {
+      max-width: 558px;
+    }
+
+    @include media-query-for-size(desktop-full-hd) {
       max-width: 648px;
+    }
+  }
 
-      @include media-query-for-size(mobile-small) {
-        max-width: 260px;
-      }
+  .why-text-holder {
+    width: 100%;
+    min-height: 168px;
+    max-width: 648px;
 
-      @include media-query-for-size(mobile-only) {
-        max-width: 540px;
-      }
+    @include media-query-for-size(mobile-small) {
+      max-width: 260px;
+    }
 
-      @include media-query-for-size(tablet-only) {
-        max-width: 720px;
-      }
+    @include media-query-for-size(mobile-only) {
+      max-width: 540px;
+    }
 
-      @include media-query-for-size(desktop-small) {
-        max-width: 648px;
-      }
+    @include media-query-for-size(tablet-only) {
+      max-width: 720px;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      max-width: 648px;
     }
   }
 
@@ -203,71 +200,71 @@
       max-width: 424px;
       margin-right: 112px;
     }
+  }
 
-    .why-first-image-holder {
-      margin-right: 74px;
+  .why-first-image-holder {
+    margin-right: 74px;
 
-      @include media-query-for-size(mobile-small) {
-        margin-right: 0;
-        max-width: 120px;
-        min-height: 76px;
-      }
-
-      @include media-query-for-size(mobile-only) {
-        margin-right: 0;
-        max-width: 258px;
-        min-height: 162px;
-      }
-
-      @include media-query-for-size(tablet-only) {
-        max-width: 350px;
-        min-height: 220px;
-      }
-
-      @include media-query-for-size(desktop-small) {
-        margin-right: 36px;
-      }
-
-      @include media-query-for-size(desktop-medium) {
-        margin-right: 111px;
-      }
-  
-      @include media-query-for-size(desktop-full-hd) {
-        margin-right: 74px;
-      }
+    @include media-query-for-size(mobile-small) {
+      margin-right: 0;
+      max-width: 120px;
+      min-height: 76px;
     }
 
-    .why-second-image-holder {
+    @include media-query-for-size(mobile-only) {
+      margin-right: 0;
+      max-width: 258px;
+      min-height: 162px;
+    }
+
+    @include media-query-for-size(tablet-only) {
+      max-width: 350px;
+      min-height: 220px;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      margin-right: 36px;
+    }
+
+    @include media-query-for-size(desktop-medium) {
+      margin-right: 111px;
+    }
+
+    @include media-query-for-size(desktop-full-hd) {
+      margin-right: 74px;
+    }
+  }
+
+  .why-second-image-holder {
+    margin-left: 74px;
+
+    @include media-query-for-size(mobile-small) {
+      margin-left: 0;
+      max-width: 120px;
+      min-height: 76px;
+    }
+
+    @include media-query-for-size(mobile-only) {
+      margin-left: 0;
+      max-width: 258px;
+      min-height: 162px;
+    }
+
+    @include media-query-for-size(tablet-only) {
+      max-width: 350px;
+      min-height: 220px;
+    }
+
+    @include media-query-for-size(desktop-small) {
+      margin-left: 36px;
+    }
+
+    @include media-query-for-size(desktop-medium) {
+      margin-left: 111px;
+    }
+
+    @include media-query-for-size(desktop-full-hd) {
       margin-left: 74px;
-
-      @include media-query-for-size(mobile-small) {
-        margin-left: 0;
-        max-width: 120px;
-        min-height: 76px;
-      }
-
-      @include media-query-for-size(mobile-only) {
-        margin-left: 0;
-        max-width: 258px;
-        min-height: 162px;
-      }
-
-      @include media-query-for-size(tablet-only) {
-        max-width: 350px;
-        min-height: 220px;
-      }
-
-      @include media-query-for-size(desktop-small) {
-        margin-left: 36px;
-      }
-
-      @include media-query-for-size(desktop-medium) {
-        margin-left: 111px;
-      }
-  
-      @include media-query-for-size(desktop-full-hd) {
-        margin-left: 74px;
-      }
     }
   }
 }
