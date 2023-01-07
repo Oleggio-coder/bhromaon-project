@@ -14,7 +14,7 @@
 
   @media screen and (max-width: 768px) {
 
-    .logo-holder {
+    .header-logo-holder {
       padding-left: 58px;
       margin: 0 auto;
 
@@ -24,7 +24,7 @@
     }
   }
 
-  .logo-link {
+  .header-logo-link {
 
     img {
       transition: all ease-in-out 0.3s;
@@ -77,37 +77,24 @@
     width: 100%;
     max-width: 1320px;
 
-    @include media-query-for-size(mobile-small) {
-      justify-content: space-between;
-      align-items: center;
-    }
-
     @include media-query-for-size(tablet-only) {
-      justify-content: space-between;
       flex-direction: column;
       max-width: 720px;
       gap: 32px;
     }
 
     @include media-query-for-size(desktop-small) {
-      justify-content: space-between;
       flex-direction: row;
       max-width: 960px;
       gap: 0;
     }
 
     @include media-query-for-size(desktop-medium) {
-      justify-content: space-between;
-      flex-direction: row;
       max-width: 1140px;
-      gap: 0;
     }
 
     @include media-query-for-size(desktop-full-hd) {
-      justify-content: space-between;
-      flex-direction: row;
       max-width: 1320px;
-      gap: 0;
     }
   }
 
