@@ -47,6 +47,18 @@
     }
   }
 
+  .steps-title-holder {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+    h2 {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
   .step-holder {
     display: flex;
     flex-wrap: wrap;
